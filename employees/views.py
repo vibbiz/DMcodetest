@@ -1,7 +1,11 @@
-from rest_framework import viewsets
-from.models import Employee
-from.serializers import EmployeeSerializer
+from rest_framework import generics
+from .models import Employee
+from .serializers import EmployeeSerializer
 
-class EmployeeViewSet(viewsets.ModelViewSet):
+class EmployeeListCreateAPIView(generics.ListCreateAPIView):
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
+
+class EmployeeDestroyAPIView(generics.DestroyAPIView):
     queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
