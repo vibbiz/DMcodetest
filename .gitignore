@@ -1,0 +1,12 @@
+# Ignorera den virtuella miljön
+venv/
+
+# Ignorera Python bytecode-filer
+__pycache__/
+*.pyc
+
+# Ignorera den lokala SQLite-databasen
+db.sqlite3
+
+# Ignorera filen med lokala hemligheter. MYCKET VIKTIGT!
+.env

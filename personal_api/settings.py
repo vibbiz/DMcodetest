@@ -53,7 +53,7 @@ DATABASES = {
     }
 }
 
-# Minnesdatabas för tester
+# Byt till minnesdatabas för tester
 if 'test' in sys.argv:
     DATABASES['default'] = {
         'ENGINE': 'django.db.backends.sqlite3',
