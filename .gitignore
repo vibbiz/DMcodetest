@@ -1,12 +1,31 @@
-# Ignorera den virtuella miljön
+# virtual envs
 venv/
+.venv/
+env/
 
-# Ignorera Python bytecode-filer
+# python cache
 __pycache__/
 *.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
 
-# Ignorera den lokala SQLite-databasen
+# local db & generated
 db.sqlite3
+staticfiles/
+media/
+*.log
+coverage.xml
+.coverage
 
-# Ignorera filen med lokala hemligheter. MYCKET VIKTIGT!
-.env
+# editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# builds
+build/
+dist/
+*.egg-info/
+.tox/

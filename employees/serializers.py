@@ -1,8 +1,7 @@
 from rest_framework import serializers
-from .models import Employee
 
-class EmployeeSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Employee
-        fields = ["id", "first_name", "last_name", "email", "date_joined"]
-        read_only_fields = ["id", "date_joined"]
+class EmployeeSerializer(serializers.Serializer):
+    id = serializers.IntegerField(read_only=True)
+    first_name = serializers.CharField(max_length=100)
+    last_name = serializers.CharField(max_length=100)
+    email = serializers.EmailField(max_length=254)
