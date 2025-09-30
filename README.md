@@ -38,7 +38,7 @@ Operationer:
 
 ```powershell
 # 1) Gå till projektmappen (den som innehåller manage.py)
-cd C:\Users\<du>\Downloads\pDMcodetest
+cd C:\Users\<du>\Downloads\DMcodetest
 
 # 2) Skapa och aktivera virtuell miljö (rekommenderas)
 python -m venv venv
