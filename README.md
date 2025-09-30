@@ -42,8 +42,6 @@ cd C:\Users\<du>\Downloads\DMcodetest
 
 # 2) Skapa och aktivera virtuell miljö (rekommenderas)
 python -m venv venv
-.
-env\Scripts\Activate.ps1
 
 # 3) Installera beroenden
 pip install -r requirements.txt
